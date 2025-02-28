@@ -1,6 +1,7 @@
+pub mod code;
 mod errors;
-mod ext;
+mod impl_from;
 pub mod protobuf;
 
-pub use error_code::ErrorCode;
+pub use code::*;
 pub use errors::*;

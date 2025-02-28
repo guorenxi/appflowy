@@ -1,19 +1,15 @@
+#[macro_use]
+extern crate flowy_sqlite;
+
 pub mod entities;
-pub mod event;
-mod handlers;
-pub mod module;
-pub mod notify;
+mod event_handler;
+pub mod event_map;
+mod migrations;
+mod notification;
 pub mod protobuf;
 pub mod services;
-mod sql_tables;
-
-#[macro_use]
-extern crate flowy_database;
-
-pub mod prelude {
-    pub use crate::{entities::*, services::server::*};
-}
+pub mod user_manager;
 
 pub mod errors {
-    pub use flowy_error::{internal_error, ErrorCode, FlowyError};
+  pub use flowy_error::*;
 }

@@ -1,8 +1,6 @@
-#[build]
-#target-dir = "./bin"
-
 [target.x86_64-apple-darwin]
-rustflags=["-C", "link-arg=-mmacosx-version-min=10.11"]
+#rustflags = ["-C", "target-cpu=native", "-C", "link-arg=-mmacosx-version-min=11.0"]
+rustflags = ["-C", "link-arg=-mmacosx-version-min=11.0"]
 
 [target.aarch64-apple-darwin]
-rustflags=["-C", "link-arg=-mmacosx-version-min=10.11"]
+rustflags = ["-C", "link-arg=-mmacosx-version-min=11.0"]

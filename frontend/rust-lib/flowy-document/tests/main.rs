@@ -1,2 +1,2 @@
 mod document;
-mod editor;
+mod parser;

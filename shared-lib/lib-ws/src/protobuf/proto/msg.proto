@@ -1,9 +1,0 @@
-syntax = "proto3";
-
-message WebSocketRawMessage {
-    WSModule module = 1;
-    bytes data = 2;
-}
-enum WSModule {
-    Doc = 0;
-}

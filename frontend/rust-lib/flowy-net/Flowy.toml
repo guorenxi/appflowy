@@ -1,2 +1,0 @@
-proto_crates = ["src/event.rs", "src/entities"]
-event_files = ["src/event.rs"]
